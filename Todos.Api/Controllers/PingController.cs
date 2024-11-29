@@ -9,7 +9,7 @@ namespace Todos.Api.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            var myName = System.Environment.GetEnvironmentVariable("MY_NAME") ?? "SARA";
+            var myName = System.Environment.GetEnvironmentVariable("MY_NAME") ?? "unknown";
             return Ok("pong " + myName);
         }
     }
